@@ -24,6 +24,7 @@ class MyWidget(QWidget):
             qp.begin(self)
             self.draw_circle(qp)
             qp.end()
+            self.paint = False
 
     def draw_circle(self, qp):
         qp.setBrush(QColor(255, 255, 0))
